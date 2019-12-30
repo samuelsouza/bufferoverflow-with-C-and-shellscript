@@ -1,0 +1,23 @@
+#########################################
+#					#
+#   CS458 - Programming Assignment 3	#
+#       Samuel Camargo de Souza		#
+#	   scamarg1@binghamton.edu	#
+#					#
+#########################################
+
+Buffer Overflow:
+	- The goal is overwrite parts of memory which aren’t supposed to be overwritten by an arbritary input and making the process execute this code.
+	- The memory is organized as follows: code segment (instruction pointer, keeps the address of the code that will be executed next), data segment (variables and dynamic buffers), stack segment (used to pass arguments to functions and as a space for variable of functions).
+
+- Compiling and Checking the dump of the assembler structure and getting the return value
+# g++ —ggdbs drr -fno-stack-protector vuln_program.c -o vuln
+# gdb vuln
+#(gdb) disas main
+#(gdb) disas target
+- Checking if the registers are being overwritten
+# gdb vuln
+#(gdb) run vuln < input
+#(gdb) info registers
+
+#(gdb) set disassemble-flavor intiel

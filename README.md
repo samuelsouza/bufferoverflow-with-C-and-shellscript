@@ -1,5 +1,3 @@
-_Developed as part of CS458 - Introduction to Computer Security class at Binghamton University_
-
 This is a simple C program with buffer overflow problem, along with a shell script that automates the exploitation of the vulnerability using GDB debugger. This is a very simple situation, intended for study purposes only.
 
 # *Buffer Overflow*:
@@ -35,3 +33,5 @@ The shell script was tested on Ubuntu and can be executed individually, it compi
 ```shell
 ./bufferOverflowExploit.sh
 ```
+
+_Disclaimer: Developed as part of CS458 - Introduction to Computer Security class at Binghamton University_

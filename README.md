@@ -25,7 +25,7 @@ Checking if the registers are being overwritten
 # gdb vuln
 #(gdb) run vuln < input
 #(gdb) info registers
-#(gdb) set disassemble-flavor intiel
+#(gdb) set disassemble-flavor intel
 ```
 
 # *Automated Process*:
